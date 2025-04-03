@@ -139,6 +139,7 @@ body {
   flex-direction: column;
   justify-content: end;
   transition: all 0.3s ease;
+  position: relative; 
 }
 
 .article-info {
@@ -157,29 +158,6 @@ body {
   transition: color 0.3s ease;
 }
 
-.arcticle-description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 200px;
-  font-size: 16px;
-}
-
-.article-other {
-  margin-top: -15px;
-  text-align: right;
-  font-size: 22px;
-}
-
-.article-date {
-  margin-top: 5px;
-  font-size: 28px;
-}
-
-.learn-about {
-  margin-top: 30px;
-  font-size: 32px;
-}
-
 .heart-container {
   position: absolute;
   top: 10px;
@@ -191,15 +169,20 @@ body {
 }
 
 .heart-label {
-  font-size: 32px; 
+  font-size: 32px;
   cursor: pointer;
   user-select: none;
-  color: black; 
+  color: black;
   transition: color 0.3s ease;
+  display: none; 
+}
+
+.heart-checkbox + .heart-label {
+  display: inline;
 }
 
 .heart-checkbox:checked + .heart-label {
-  color: red; 
+  color: red;
 }
 
 /* -------------------publication------------------------ */
