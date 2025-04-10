@@ -64,6 +64,34 @@
               </p>
             </div>
           </div>
+
+          <div class="publication-interactions">
+            <div class="like-container">
+              <input
+                type="checkbox"
+                id="publicationLike"
+                class="heart-checkbox"
+              />
+              <label for="publicationLike" class="heart-label">♥</label>
+            </div>
+
+            <div class="comments-section">
+              <h2 class="comments-title">Сomments</h2>
+              <form class="comment-form">
+                <div class="comment-input-wrapper">
+                  <textarea
+                    class="comment-input"
+                    placeholder="Leave your comment..."
+                    required
+                  ></textarea>
+                  <button type="submit" class="comment-submit">
+                    Add a comment
+                  </button>
+                </div>
+              </form>
+              <div class="comments-list"></div>
+            </div>
+          </div>
         </article>
       </main>
 
@@ -75,5 +103,6 @@
         </div>
       </footer>
     </div>
+    <script src="./publication.js"></script>
   </body>
 </html>
